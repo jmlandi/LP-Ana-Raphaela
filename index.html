@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="static/style.css" rel="stylesheet">
+    <title>Ana Raphaela</title>
+</head>
+<body>
+    <header class="hidden">
+        <h1>Ana Raphaela</h1>
+        <h2>Melhorando a Relação Entre Mães e Filhos</h2>
+    </header>
+    
+    <article id="b1" class="block">
+        <div id="b1pt1">
+            <img id="img1" src="images/evento.png">
+            <p>Entenda o comportamento das suas crianças para ter uma comunicação assertiva e uma maternidade mais acolhedora e paciente.</p>
+            <form action="https://api.sheetmonkey.io/form/tgFSXuW2uPHAfENBCi1TQ" method="POST">
+                <input id="f1nome" type="text" name="nome" placeholder="Nome" required>
+                <input id="f1fone" maxlength="15" onkeyup="handlePhone(event)" name="fone" placeholder="WhatsApp" required>
+                <input id="f1email" type="email" name="email" placeholder="E-mail" required>
+                <button id="f1btn" type="submit">Quero participar do Grupo VIP</button>
+            </form>
+        </div>
+        <div id="b1pt2">
+            <img id="img2" src="images/ana1.png">
+        </div>
+    </article>
+    
+    <article id="b2" class="block">
+        <h3>Do dia 23 ao dia 30 de julho no Instagram</h3>
+        <img id="timeline" src="images/timeline.png">
+    </article>
+    
+    <article id="b3" class="block">
+        <div id="rounb">
+            <div id="qst"><h3>Para quem é a Semana Melhorando a Relação entre mães e filhos?</h3></div>
+            <div id="divlist">
+                <span id="hlist">É para você que:</span>
+                <ul id="list">
+                    <li>Deseja compreender o que está por trás do comportamento do seu filho;</li>
+                    <li>Pretende construir uma maternidade com mais paciência;</li>
+                    <li>Quer se comunicar de formar clara, assertiva e respeitosa;</li>
+                    <li>Deseja lidar melhor com as emoções do seu filho.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="form2">
+            <form action="https://api.sheetmonkey.io/form/tgFSXuW2uPHAfENBCi1TQ" method="POST">
+                <div class="linef">
+                    <input id="f2nome" class="btn" type="text" name="nome" placeholder="Nome" required>
+                    <input id="f2fone" class="btn" type="tel" maxlength="15" onkeyup="handlePhone(event)" name="fone" placeholder="WhatsApp" required>
+                </div>
+                <input id="f2email" class="btn" type="email" name="email" placeholder="E-mail" required>
+                <button id="f2btn" class="btn" type="submit">Quero participar do Grupo VIP</button>
+            </form>
+        </div>
+    </article>
+    
+    <article id="b4" class="block">
+        <img src="images/ana2.png">
+        <div id="b4div">
+            <h4>Ana Raphaela Novaes</h4>
+            <p>
+                Ana Raphaela é mãe de 3, esposa, psicóloga e educadora parental, especialista no atendimento de crianças e adolescentes e orientação familiar. Co-fundadora da Clínica Criar, desde 2019, orienta pais e mães na criação dos seus filhos.
+            </p>
+        </div>
+    </article>
+    
+    <footer>&copy; Criar Desenvolvimento e Educação LTDA. Todos os direiros reservados </footer>
+    <script>
+        const handlePhone = (event) => {
+            let input = event.target
+            input.value = phoneMask(input.value)
+        }
+        const phoneMask = (value) => {
+            if (!value) return ""
+            value = value.replace(/\D/g,'')
+            value = value.replace(/(\d{2})(\d)/,"($1) $2")
+            value = value.replace(/(\d)(\d{4})$/,"$1-$2")
+            return value
+        }
+    </script>
+</body>
+</html>
