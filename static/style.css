@@ -302,7 +302,8 @@ p {font-weight: 10;}
 .linef, #f2email, #f2btn {
     width: 100%;
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 0px 20px;
 }
 }
 
