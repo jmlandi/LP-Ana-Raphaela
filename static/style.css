@@ -157,6 +157,7 @@ p {font-weight: 10;}
 }
 
 #b1pt1 form button {
+    cursor: pointer;
     color: #fff;
     background-color: #5B1E3D;
 }
