@@ -299,7 +299,10 @@ p {font-weight: 10;}
 }
 
 .linef, #f2email, #f2btn {
-    width: 410px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
 }
 
 .linef input {
